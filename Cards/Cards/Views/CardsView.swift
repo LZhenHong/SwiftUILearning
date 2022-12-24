@@ -12,11 +12,14 @@ struct CardsView: View {
     @EnvironmentObject var store: CardStore
     
     var body: some View {
-        ZStack {
-            CardsListView()
-            if !viewState.showAllCards {
-                SingleCardView()
+        VStack {
+            Button {
+                viewState.selectedCard = store.addCard()
+                viewState.showAllCards = false
+            } label: {
+                Text("Add")
             }
+            CardsListView()
         }
     }
 }
