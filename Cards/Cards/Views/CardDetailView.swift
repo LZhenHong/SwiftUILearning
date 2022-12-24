@@ -12,14 +12,18 @@ struct CardDetailView: View {
     @State private var currentModal: CardModal?
     @State private var stickerImage: UIImage?
     @State private var images: [UIImage] = []
+    @State private var frame: AnyShape?
     @Binding var card: Card
     
     var content: some View {
         ZStack {
             card.backgroundColor
                 .edgesIgnoringSafeArea(.all)
+                .onTapGesture {
+                    viewState.selectedElement = nil
+                }
             ForEach(card.elements, id: \.id) { element in
-                CardElementView(element: element)
+                CardElementView(element: element, selected: viewState.selectedElement?.id == element.id)
                     .resizableView(transform: bindingTransform(for: element))
                     .frame(width: element.transform.size.width,
                            height: element.transform.size.height)
@@ -29,6 +33,9 @@ struct CardDetailView: View {
                         } label: {
                             Label("Delete", systemImage: "trash")
                         }
+                    }
+                    .onTapGesture {
+                        viewState.selectedElement = element
                     }
             }
         }
@@ -66,6 +73,14 @@ struct CardDetailView: View {
                                 card.addElement(uiImage: image)
                             }
                             images = []
+                        }
+                case .framePicker:
+                    FramePicker(frame: $frame)
+                        .onDisappear {
+                            if let frame {
+                                card.update(viewState.selectedElement, frame: frame)
+                            }
+                            frame = nil
                         }
                 default:
                     EmptyView()

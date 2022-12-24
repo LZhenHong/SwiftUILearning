@@ -34,6 +34,9 @@
 		3487E0B5294C5D0600F61376 /* CardBottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487E0B4294C5D0600F61376 /* CardBottomToolbar.swift */; };
 		F206A5432956DAD300AEA73B /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206A5422956DAD300AEA73B /* PhotoPicker.swift */; };
 		F206A5452956E22400AEA73B /* CardDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206A5442956E22400AEA73B /* CardDrop.swift */; };
+		F206A5472956FE0A00AEA73B /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206A5462956FE0A00AEA73B /* Shapes.swift */; };
+		F206A5492957035300AEA73B /* FramePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206A5482957035300AEA73B /* FramePicker.swift */; };
+		F206A54B295703D400AEA73B /* AnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206A54A295703D400AEA73B /* AnyShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		3487E0B4294C5D0600F61376 /* CardBottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBottomToolbar.swift; sourceTree = "<group>"; };
 		F206A5422956DAD300AEA73B /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		F206A5442956E22400AEA73B /* CardDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrop.swift; sourceTree = "<group>"; };
+		F206A5462956FE0A00AEA73B /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		F206A5482957035300AEA73B /* FramePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePicker.swift; sourceTree = "<group>"; };
+		F206A54A295703D400AEA73B /* AnyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 			children = (
 				344321182950628D00FDE018 /* StickerPicker.swift */,
 				F206A5422956DAD300AEA73B /* PhotoPicker.swift */,
+				F206A5482957035300AEA73B /* FramePicker.swift */,
 			);
 			path = "Card Modal Views";
 			sourceTree = "<group>";
@@ -154,6 +161,8 @@
 				3443211029504E2400FDE018 /* CardStore.swift */,
 				3443210E29504DE800FDE018 /* Card.swift */,
 				3443210C29504D9E00FDE018 /* CardElement.swift */,
+				F206A5462956FE0A00AEA73B /* Shapes.swift */,
+				F206A54A295703D400AEA73B /* AnyShape.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3474D6A8294D70EC00E2FDB0 /* Transform.swift in Sources */,
+				F206A54B295703D400AEA73B /* AnyShape.swift in Sources */,
 				3443211129504E2400FDE018 /* CardStore.swift in Sources */,
 				3474D6A4294D697500E2FDB0 /* ResizableView.swift in Sources */,
 				3443210F29504DE800FDE018 /* Card.swift in Sources */,
@@ -266,6 +276,8 @@
 				3474D6AD294D875E00E2FDB0 /* ViewExtensions.swift in Sources */,
 				3443210B29504CCE00FDE018 /* TextExtensions.swift in Sources */,
 				F206A5452956E22400AEA73B /* CardDrop.swift in Sources */,
+				F206A5492957035300AEA73B /* FramePicker.swift in Sources */,
+				F206A5472956FE0A00AEA73B /* Shapes.swift in Sources */,
 				34396BD7294C4C2700FCD508 /* CardsListView.swift in Sources */,
 				3487E0B5294C5D0600F61376 /* CardBottomToolbar.swift in Sources */,
 				3474D6B2294D95C200E2FDB0 /* ColorExtensions.swift in Sources */,

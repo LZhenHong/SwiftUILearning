@@ -23,4 +23,13 @@ struct Card: Identifiable {
             elements.remove(at: index)
         }
     }
+    
+    mutating func update(_ element: CardElement?, frame: AnyShape) {
+        if let element = element as? ImageElement,
+           let index = element.index(in: elements) {
+            var new = element
+            new.frame = frame
+            elements[index] = new
+        }
+    }
 }
