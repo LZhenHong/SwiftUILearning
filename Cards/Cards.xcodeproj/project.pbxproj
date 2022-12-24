@@ -32,6 +32,8 @@
 		3487E0B1294C55B300F61376 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487E0B0294C55B300F61376 /* CardDetailView.swift */; };
 		3487E0B3294C5C7F00F61376 /* CardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487E0B2294C5C7F00F61376 /* CardModal.swift */; };
 		3487E0B5294C5D0600F61376 /* CardBottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487E0B4294C5D0600F61376 /* CardBottomToolbar.swift */; };
+		F206A5432956DAD300AEA73B /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206A5422956DAD300AEA73B /* PhotoPicker.swift */; };
+		F206A5452956E22400AEA73B /* CardDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206A5442956E22400AEA73B /* CardDrop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		3487E0B0294C55B300F61376 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		3487E0B2294C5C7F00F61376 /* CardModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModal.swift; sourceTree = "<group>"; };
 		3487E0B4294C5D0600F61376 /* CardBottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBottomToolbar.swift; sourceTree = "<group>"; };
+		F206A5422956DAD300AEA73B /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		F206A5442956E22400AEA73B /* CardDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				344321182950628D00FDE018 /* StickerPicker.swift */,
+				F206A5422956DAD300AEA73B /* PhotoPicker.swift */,
 			);
 			path = "Card Modal Views";
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				34396BD4294C4B8D00FCD508 /* CardThumbnailView.swift */,
 				34396BD8294C4C5100FCD508 /* SingleCardView.swift */,
 				3487E0B0294C55B300F61376 /* CardDetailView.swift */,
+				F206A5442956E22400AEA73B /* CardDrop.swift */,
 				3487E0B4294C5D0600F61376 /* CardBottomToolbar.swift */,
 				3474D6A3294D697500E2FDB0 /* ResizableView.swift */,
 				344321122950587000FDE018 /* CardElementView.swift */,
@@ -254,10 +260,12 @@
 				34396BD5294C4B8D00FCD508 /* CardThumbnailView.swift in Sources */,
 				3443210D29504D9E00FDE018 /* CardElement.swift in Sources */,
 				3474D6AA294D75A300E2FDB0 /* Operators.swift in Sources */,
+				F206A5432956DAD300AEA73B /* PhotoPicker.swift in Sources */,
 				34396BDB294C4CDD00FCD508 /* ViewState.swift in Sources */,
 				3443210929504CA400FDE018 /* PreviewData.swift in Sources */,
 				3474D6AD294D875E00E2FDB0 /* ViewExtensions.swift in Sources */,
 				3443210B29504CCE00FDE018 /* TextExtensions.swift in Sources */,
+				F206A5452956E22400AEA73B /* CardDrop.swift in Sources */,
 				34396BD7294C4C2700FCD508 /* CardsListView.swift in Sources */,
 				3487E0B5294C5D0600F61376 /* CardBottomToolbar.swift in Sources */,
 				3474D6B2294D95C200E2FDB0 /* ColorExtensions.swift in Sources */,
@@ -396,7 +404,7 @@
 				DEVELOPMENT_TEAM = V65YCRQZ2M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cards/Info.plist;
+				INFOPLIST_FILE = Cards/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -425,7 +433,7 @@
 				DEVELOPMENT_TEAM = V65YCRQZ2M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cards/Info.plist;
+				INFOPLIST_FILE = Cards/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
